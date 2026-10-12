@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import axios from "axios";
 import "./style.css";
 
-const API = "http://localhost:8080/api";
+const API = "https://safecampus-tbae.onrender.com/api";
 
 function App() {
   const [incidents, setIncidents] = useState([]);

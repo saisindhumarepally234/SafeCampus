@@ -19,7 +19,7 @@ public class SecurityConfig {
    return http.build();
  }
  @Bean CorsConfigurationSource corsConfigurationSource(){
-   CorsConfiguration c=new CorsConfiguration(); c.setAllowedOrigins(List.of("http://localhost:5173")); c.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS")); c.setAllowedHeaders(List.of("*"));
+   CorsConfiguration c=new CorsConfiguration(); c.setAllowedOrigins(List.of("https://safecampus-1-08vk.onrender.com")); c.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS")); c.setAllowedHeaders(List.of("*"));
    UrlBasedCorsConfigurationSource s=new UrlBasedCorsConfigurationSource(); s.registerCorsConfiguration("/**",c); return s;
  }
 }
